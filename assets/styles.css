@@ -1,0 +1,391 @@
+body {
+  margin: 0; }
+
+.header {
+  height: 110px;
+  background-color: #5F4B8B;
+  display: flex;
+  box-shadow: 1px 4px 2px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 4px 4px; }
+  .header-logo {
+    flex: 0 0 82.5%; }
+    .header-logo i {
+      font-size: 4em;
+      margin-left: 0.3em;
+      margin-top: 0.35em;
+      color: #00B2CA; }
+
+.header-map i {
+  font-size: 3em;
+  margin-right: 0.1em;
+  margin-top: 0.65em;
+  color: #00B2CA; }
+
+.section1-specs-people {
+  width: 300px;
+  margin: auto;
+  margin-bottom: 1.5em;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px; }
+  .section1-specs-people h2 {
+    font-size: 24px;
+    color: #5F4B8B;
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+    width: 9.5em;
+    margin: auto;
+    text-transform: uppercase; }
+  .section1-specs-people .i-people {
+    width: 180px;
+    margin: 0.5em auto; }
+    .section1-specs-people .i-people i {
+      color: #00B2CA;
+      font-size: 30px; }
+
+.peoplesec,
+.nightsec {
+  padding: 1em; }
+  .peoplesec p,
+  .nightsec p {
+    font-size: 10px;
+    color: red;
+    font-family: 'Asap', sans-serif; }
+
+.section1-specs-nights {
+  width: 300px;
+  margin: auto;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px; }
+  .section1-specs-nights h2 {
+    font-size: 24px;
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+    color: #5F4B8B;
+    width: 9.5em;
+    margin: auto;
+    text-transform: uppercase; }
+  .section1-specs-nights .i-nights {
+    width: 166px;
+    margin: 0.5em auto; }
+    .section1-specs-nights .i-nights i {
+      color: #00B2CA;
+      line-height: 1.2em;
+      font-size: 30px; }
+
+.section1-specs-location form {
+  width: 300px;
+  margin: 2em auto;
+  margin-bottom: 1.5em; }
+  .section1-specs-location form select {
+    background: transparent;
+    font-family: 'Asap', sans-serif;
+    width: 300px;
+    font-size: 1.5em;
+    border: 3px solid #5F4B8B;
+    border-radius: 4px;
+    height: 1.8em;
+    text-transform: uppercase;
+    color: #5F4B8B; }
+
+.section1-specs-search {
+  background-color: #5F4B8B;
+  width: 324px;
+  margin: auto;
+  height: 75px;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: white;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); }
+  .section1-specs-search h2 {
+    font-weight: 500;
+    font-family: 'Asap', san-serif;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.section2 {
+  width: 300px;
+  margin: auto; }
+  .section2 h2 {
+    font-family: 'Asap', sans-serif;
+    font-size: 24px;
+    font-weight: 500; }
+
+.section2 .searchitem {
+  position: relative; }
+  .section2 .searchitem .image {
+    height: 134px;
+    width: 297px;
+    background-color: #eee;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); }
+
+.section2 .searchitem #searchimg001 {
+  background-image: url("AKL_Hotel.jpg"); }
+.section2 .searchitem #searchimg002 {
+  background-image: url("WLG_Hotel.jpg"); }
+.section2 .searchitem #searchimg003 {
+  background-image: url("AKL_Hostel.jpg"); }
+.section2 .searchitem #searchimg004 {
+  background-image: url("WLG_Hostel.jpg"); }
+.section2 .searchitem #searchimg005 {
+  background-image: url("AKL_Motel.jpg"); }
+.section2 .searchitem #searchimg006 {
+  background-image: url("WLG_Motel.jpg"); }
+.section2 .searchitem #searchimg007 {
+  background-image: url("AKL_House.jpg"); }
+.section2 .searchitem #searchimg008 {
+  background-image: url("WLG_House.jpg"); }
+
+.section2 .searchitem {
+  margin-bottom: 1em; }
+  .section2 .searchitem .info {
+    height: 134px;
+    width: 297px;
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2); }
+    .section2 .searchitem .info p {
+      width: 270px;
+      margin: auto;
+      padding-top: 2em;
+      text-align: justify;
+      font-family: 'Asap', sans-serif;
+      font-size: 14px;
+      color: #5F4B8B; }
+
+.section2 .price {
+  width: 155px;
+  height: 38px;
+  background-color: #5F4B8B;
+  margin-left: 10px;
+  border-radius: 4px;
+  left: 10px; }
+  .section2 .price h3 {
+    font-family: 'Asap', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); }
+
+.section2 .buttons {
+  display: flex;
+  padding-top: 5px;
+  position: absolute;
+  z-index: 2;
+  top: 111px; }
+  .section2 .buttons .book {
+    width: 97px;
+    height: 38px;
+    background-color: #00B2CA;
+    border-radius: 4px;
+    margin-right: 10px;
+    right: 10px; }
+    .section2 .buttons .book h3 {
+      font-family: 'Asap', sans-serif;
+      font-weight: 400;
+      color: #fff;
+      font-size: 16px;
+      margin: 0;
+      text-align: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      text-transform: uppercase; }
+
+.noresults h3 {
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+  color: #00B2CA;
+  font-size: 16px;
+  margin-bottom: 1em;
+  text-transform: uppercase; }
+
+.section3 .searchitem-1 .image-gallery {
+  width: 375px;
+  height: 230px;
+  background-color: #eee; }
+
+.searchitem-1 {
+  position: relative; }
+  .searchitem-1 .searchitem-info .price {
+    width: 155px;
+    height: 38px;
+    background-color: #5F4B8B;
+    position: absolute;
+    z-index: 2;
+    top: 210px;
+    border-radius: 4px; }
+    .searchitem-1 .searchitem-info .price h3 {
+      font-family: 'Asap', sans-serif;
+      font-weight: 400;
+      color: #fff;
+      font-size: 16px;
+      margin: 0;
+      text-align: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }
+
+.searchitem-1 .searchitem-info {
+  width: 340px;
+  margin: auto; }
+  .searchitem-1 .searchitem-info h2 {
+    font-family: 'Asap', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #00B2CA;
+    margin-top: 1.2em;
+    margin-bottom: 0; }
+    .searchitem-1 .searchitem-info h2 span {
+      font-size: 18px;
+      color: #5F4B8B;
+      font-weight: 600; }
+
+.searchitem-info p {
+  font-family: 'Asap', sans-serif;
+  font-weight: 400;
+  color: #5F4B8B;
+  margin-top: 0.5em; }
+
+.section3 .searchitem-1 .image-gallery {
+  position: relative;
+  width: 375px;
+  height: 230px; }
+  .section3 .searchitem-1 .image-gallery i {
+    font-size: 2em;
+    display: block;
+    position: absolute;
+    width: 1em;
+    right: 0.3em;
+    top: 0.3em;
+    color: #00B2CA; }
+
+.facilities {
+  display: flex;
+  margin: 1em;
+  flex-wrap: wrap; }
+  .facilities .facility {
+    display: flex;
+    margin: 0.5em; }
+    .facilities .facility h4 {
+      margin: 0;
+      margin-left: 5px;
+      font-family: 'Asap', sans-serif;
+      font-weight: 400;
+      color: #5F4B8B; }
+
+.facilities {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em; }
+  .facilities .facility i {
+    color: #00B2CA; }
+
+.availfac h3 {
+  font-family: 'Asap', sans-serif;
+  color: #5F4B8B;
+  margin-bottom: 0;
+  margin-top: 0.5em;
+  font-size: 16px;
+  font-weight: 600; }
+
+.mealoptions h3 {
+  font-family: 'Asap', sans-serif;
+  color: #5F4B8B;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top: 0.5em; }
+
+.section3 {
+  position: fixed;
+  width: 375px;
+  height: 100%;
+  top: 0%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1em;
+  z-index: 40;
+  background-color: white;
+  border-radius: 0.4em; }
+
+.hide {
+  display: none; }
+
+.overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  top: 0;
+  left: 0; }
+
+.total {
+  height: 200px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  margin: 0;
+  display: flex; }
+  .total .book {
+    width: 110px;
+    height: 55px;
+    margin-top: 2em;
+    background-color: #00B2CA;
+    border-radius: 4px;
+    margin-right: 10px;
+    top: 50%; }
+    .total .book h3 {
+      font-family: 'Asap', sans-serif;
+      font-weight: 400;
+      color: #fff;
+      font-size: 16px;
+      margin: 0;
+      text-align: center;
+      top: 50%;
+      position: relative;
+      transform: translateY(-50%);
+      text-transform: uppercase; }
+
+.total .textCost {
+  flex: 0 0 60%;
+  line-height: 5px;
+  margin-left: 1em;
+  margin-top: 1em; }
+  .total .textCost h3 {
+    font-family: 'Asap', sans-serif;
+    font-weight: 500;
+    color: #5F4B8B;
+    font-size: 19px; }
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit; }
+
+.numberPeople.selected > i {
+  color: #00B2CA; }
+
+.numberNights.selected > i {
+  color: #00B2CA; }
+
+/*for tablet - inclusive*/
+/*for small tablet - inclusive*/
+@media only screen and (min-width: 40em) {
+  .mainsections {
+    display: flex;
+    margin: 1em; } }
+
+/*# sourceMappingURL=styles.css.map */

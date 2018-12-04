@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Asap:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>Contrast</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-logo"><i class="fas fa-adjust"></i></div>
+         <div onClick="window.location.reload()" class="header-map"><i class="fas fa-sync-alt"></i></div>
+    </div>
+    <div class="mainsections">
+        <section class="section1">
+            <div class="section1-specs">
+                <div class="section1-specs-location">
+                    <form>
+                        <select name="locations" id="locationSelect">
+                            <option value="All">All</option>
+                            <option value="Auckland">Auckland</option>
+                            <option value="Wellington">Wellington</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="section1-specs-people">
+                    <div class="peoplesec">
+                        <h2>How many people?</h2>
+                        <div class="i-people">
+                            <button class="numberPeople" value="1"><i class="far fa-user" value="1"></i></button>
+                            <button class="numberPeople" value="1"><i class="far fa-user"></i></button>
+                            <button class="numberPeople" value="1"><i class="far fa-user"></i></button>
+                            <button class="numberPeople" value="1"><i class="far fa-user"></i></button>
+                            <button class="numberPeople" value="1"><i class="far fa-user"></i></button>
+                            <button class="numberPeople" value="1"><i class="far fa-user"></i></button>
+                        </div>
+                        <p id="validatePeople"></p>
+                    </div>
+                </div>
+                <div class="section1-specs-nights">
+                    <div class="nightsec">
+                        <h2>How many nights?</h2>
+                        <div class="i-nights">
+                            <button class="numberNights" value="1"><i class="far fa-moon" value="1"></i></button>
+                            <button class="numberNights" value="1"><i class="far fa-moon" value="1"></i></button>
+                            <button class="numberNights" value="1"><i class="far fa-moon" value="1"></i></button>
+                            <button class="numberNights" value="1"><i class="far fa-moon" value="1"></i></button>
+                            <button class="numberNights" value="1"><i class="far fa-moon" value="1"></i></button>
+                            <button class="numberNights" value="1"><i class="far fa-moon" value="1"></i></button>
+                            <button class="numberNights" value="1"><i class="far fa-moon" value="1"></i></button>
+                            <button class="numberNights" value="1"><i class="far fa-moon" value="1"></i></button>
+                            <button class="numberNights" value="1"><i class="far fa-moon" value="1"></i></button>
+                            <button class="numberNights" value="1"><i class="far fa-moon" value="1"></i></button>
+                            <button class="numberNights" value="1"><i class="far fa-moon" value="1"></i></button>
+                            <button class="numberNights" value="1"><i class="far fa-moon" value="1"></i></button>
+                            <button class="numberNights" value="1"><i class="far fa-moon" value="1"></i></button>
+                            <button class="numberNights" value="1"><i class="far fa-moon" value="1"></i></button>
+                            <button class="numberNights" value="1"><i class="far fa-moon" value="1"></i></button>
+                        </div>
+                        <p id="validateNights"></p>
+                    </div>
+                </div>
+                <div class="section1-specs-search" id="search" data-to=".section2">
+                    <h2>Search</h2></a>
+                </div>
+            </div>
+        </section>
+        <section class="section2 hide" id="section2">
+            <h2 id="searchtext">Search Results</h2>
+
+             <div class="noresults hide"><h3>Sorry. No properties matched your specifications.</h3></div>
+
+            <div class="searchitem hotel akl hide" id="searchitem01">
+                <div class="image" id="searchimg001"></div>
+                <div class="info">
+                    <div class="buttons">
+                        <div class="price">
+                            <h3>$157/night | 1-2  <i class="far fa-user"></i> </h3> </div>
+                        <div class="book" id="AKLHotel">
+                            <h3>Book</h3>
+                        </div>
+                    </div>
+                    <p><b>Cordis Hotel, Auckland</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora consectetur inventore earum tenetur iste? Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="searchitem hotel wlg hide" id="searchitem02">
+                <div class="image" id="searchimg002"></div>
+                <div class="info">
+                    <div class="buttons">
+                        <div class="price">
+                            <h3>$157/night | 1-2  <i class="far fa-user"></i> </h3> </div>
+                        <div class="book" id="WLGHotel">
+                            <h3>Book</h3>
+                        </div>
+                    </div>
+                    <p><b>Novotel, Wellington</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora consectetur inventore earum tenetur iste? Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="searchitem hostel akl hide" id="searchitem03">
+                <div class="image" id="searchimg003"></div>
+                <div class="info">
+                    <div class="buttons">
+                        <div class="price">
+                            <h3>$30/night | 1-6  <i class="far fa-user"></i> </h3> </div>
+                        <div class="book" id="AKLHostel">
+                            <h3>Book</h3>
+                        </div>
+                    </div>
+                    <p><b>MA Backpackers, Auckland</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora consectetur inventore earum tenetur iste? Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="searchitem hostel wlg hide" id="searchitem04">
+                <div class="image" id="searchimg004"></div>
+                <div class="info">
+                    <div class="buttons">
+                        <div class="price">
+                            <h3>$30/night | 1-6  <i class="far fa-user"></i> </h3> </div>
+                        <div class="book" id="WLGHostel">
+                            <h3>Book</h3>
+                        </div>
+                    </div>
+                    <p><b>YHA, Wellington</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora consectetur inventore earum tenetur iste? Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="searchitem motel akl hide" id="searchitem05">
+                <div class="image" id="searchimg005"></div>
+                <div class="info">
+                    <div class="buttons">
+                        <div class="price">
+                            <h3>$90/night | 2-4  <i class="far fa-user"></i> </h3> </div>
+                        <div class="book" id="AKLMotel">
+                            <h3>Book</h3>
+                        </div>
+                    </div>
+                    <p><b>Greenlane Suites, Auckland</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora consectetur inventore earum tenetur iste? Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="searchitem motel wlg hide" id="searchitem06">
+                <div class="image" id="searchimg006"></div>
+                <div class="info">
+                    <div class="buttons">
+                        <div class="price">
+                            <h3>$90/night | 2-4  <i class="far fa-user"></i> </h3> </div>
+                        <div class="book" id="WLGMotel">
+                            <h3>Book</h3>
+                        </div>
+                    </div>
+                    <p><b>Marksman Motor Inn, Wellington</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora consectetur inventore earum tenetur iste? Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="searchitem house akl hide" id="searchitem07">
+                <div class="image" id="searchimg007"></div>
+                <div class="info">
+                    <div class="buttons">
+                        <div class="price">
+                            <h3>$240/night | 1-4  <i class="far fa-user"></i> </h3> </div>
+                        <div class="book" id="AKLHouse">
+                            <h3>Book</h3>
+                        </div>
+                    </div>
+                    <p><b>Waiheke Island, Auckland</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora consectetur inventore earum tenetur iste? Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="searchitem house wlg hide" id="searchitem08">
+                <div class="image" id="searchimg008"></div>
+                <div class="info">
+                    <div class="buttons">
+                        <div class="price">
+                            <h3>$240/night | 1-4  <i class="far fa-user"></i> </h3> </div>
+                        <div class="book" id="WLGHouse">
+                            <h3>Book</h3>
+                        </div>
+                    </div>
+                    <p><b>Kapiti Coast, Wellington</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora consectetur inventore earum tenetur iste? Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="filters"></div>
+        </section>
+        <section class="section3 hide" id="#section3">
+            <div class="searchitem-1 hide" id=searchitem1>
+                <div class="image-gallery"><i class="fa fa-times close-button"></i><img src="assets/AKL_Hotel001.jpg" alt=""></div>
+                <div class="searchitem-info">
+                    <div class="price">
+                        <h3>$157/night | 1-2  <i class="far fa-user"></i> </h3> </div>
+                    <h2>Cordis Hotel <span>Auckland</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora consectetur inventore earum tenetur iste? Lorem ipsum dolor sit amet.</p>
+                    <div class="mealoptions">
+                        <h3>Add Breakfast (+$10/person)<span><input type="checkbox" name="breakfast" class='breakfastCheckbox' value="false"></h3></span>
+                    </div>
+                    <div class="availfac">
+                        <h3>Available Facilities:</h3>
+                        <div class="facilities">
+                            <div class="facility"><i class="fas fa-swimmer"></i>
+                                <h4>Swimming/Spa</h4></div>
+                            <div class="facility"> <i class="fas fa-concierge-bell"></i>
+                                <h4>Room Service</h4></div>
+                            <div class="facility"><i class="fas fa-wifi"></i>
+                                <h4>WiFi Available</h4></div>
+                            <div class="facility"><i class="fas fa-dumbbell"></i>
+                                <h4>Gym Access</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="textCost">
+                        <h3 class="totalAcc">Accomodation: <span class="accTotal" id="accTotal01">$0.00</span></h3>
+                        <h3 class="Breakfast">Breakfast: <span class="breakfastTotal" id="bfastTotal01">$0.00</span></h3>
+                        <h3 class="totalCost">The total is: <span class="allTotal" id="allTotal01">$0.00</span></h3></div>
+                    <div class="book">
+                        <h3>Book now</h3></div>
+                </div>
+            </div>
+
+             <div class="searchitem-1 hide" id=searchitem2>
+                <div class="image-gallery"><i class="fa fa-times close-button"></i><img src="assets/WLG_Hotel001.jpg" alt=""></div>
+                <div class="searchitem-info">
+                    <div class="price">
+                        <h3>$157/night | 1-2  <i class="far fa-user"></i> </h3> </div>
+                    <h2>Novotel <span>Wellington</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora consectetur inventore earum tenetur iste? Lorem ipsum dolor sit amet.</p>
+                    <div class="mealoptions">
+                        <h3>Add Breakfast (+$10/person)<span><input type="checkbox" name="breakfast" class='breakfastCheckbox' value="false"></h3></span>
+                    </div>
+                    <div class="availfac">
+                        <h3>Available Facilities:</h3>
+                        <div class="facilities">
+                            <div class="facility"><i class="fas fa-swimmer"></i>
+                                <h4>Swimming/Spa</h4></div>
+                            <div class="facility"> <i class="fas fa-concierge-bell"></i>
+                                <h4>Room Service</h4></div>
+                            <div class="facility"><i class="fas fa-wifi"></i>
+                                <h4>WiFi Available</h4></div>
+                            <div class="facility"><i class="fas fa-dumbbell"></i>
+                                <h4>Gym Access</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="textCost">
+                        <h3 class="totalAcc">Accomodation: <span class="accTotal" id="accTotal02">$0.00</span></h3>
+                        <h3 class="Breakfast">Breakfast: <span class="breakfastTotal" id="bfastTotal02">$0.00</span></h3>
+                        <h3 class="totalCost">The total is: <span class="allTotal" id="allTotal02">$0.00</span></h3></div>
+                    <div class="book">
+                        <h3>Book now</h3></div>
+                </div>
+            </div>
+
+            <div class="searchitem-1 hide" id=searchitem3>
+                <div class="image-gallery"><i class="fa fa-times close-button"></i><img src="assets/AKL_Hostel001.jpg" alt=""></div>
+                <div class="searchitem-info">
+                    <div class="price">
+                        <h3>$30/night | 1-6  <i class="far fa-user"></i> </h3> </div>
+                   <h2>MA Backpackers <span>Auckland</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora consectetur inventore earum tenetur iste? Lorem ipsum dolor sit amet.</p>
+                    <div class="mealoptions">
+                        <h3>Add Breakfast (+$10/person)<span><input type="checkbox" name="breakfast" class='breakfastCheckbox' value="false"></h3></span>
+                    </div>
+                    <div class="availfac">
+                        <h3>Available Facilities:</h3>
+                        <div class="facilities">
+                            <div class="facility"><i class="fas fa-swimmer"></i>
+                                <h4>Swimming/Spa</h4></div>
+                            <div class="facility"> <i class="fas fa-concierge-bell"></i>
+                                <h4>Room Service</h4></div>
+                            <div class="facility"><i class="fas fa-wifi"></i>
+                                <h4>WiFi Available</h4></div>
+                            <div class="facility"><i class="fas fa-dumbbell"></i>
+                                <h4>Gym Access</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="textCost">
+                        <h3 class="totalAcc">Accomodation: <span class="accTotal" id="accTotal03">$0.00</span></h3>
+                        <h3 class="Breakfast">Breakfast: <span class="breakfastTotal" id="bfastTotal03">$0.00</span></h3>
+                        <h3 class="totalCost">The total is: <span class="allTotal" id="allTotal03">$0.00</span></h3></div>
+                    <div class="book">
+                        <h3>Book now</h3></div>
+                </div>
+            </div>
+
+            <div class="searchitem-1 hide" id=searchitem4>
+                <div class="image-gallery"><i class="fa fa-times close-button"></i><img src="assets/WLG_Hostel001.jpg" alt=""></div>
+                <div class="searchitem-info">
+                    <div class="price">
+                        <h3>$30/night | 1-6  <i class="far fa-user"></i> </h3> </div>
+                    <h2>YHA <span>Wellington</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora consectetur inventore earum tenetur iste? Lorem ipsum dolor sit amet.</p>
+                    <div class="mealoptions">
+                        <h3>Add Breakfast (+$10/person)<span><input type="checkbox" name="breakfast" class='breakfastCheckbox' value="false"></h3></span>
+                    </div>
+                    <div class="availfac">
+                        <h3>Available Facilities:</h3>
+                        <div class="facilities">
+                            <div class="facility"><i class="fas fa-swimmer"></i>
+                                <h4>Swimming/Spa</h4></div>
+                            <div class="facility"> <i class="fas fa-concierge-bell"></i>
+                                <h4>Room Service</h4></div>
+                            <div class="facility"><i class="fas fa-wifi"></i>
+                                <h4>WiFi Available</h4></div>
+                            <div class="facility"><i class="fas fa-dumbbell"></i>
+                                <h4>Gym Access</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="textCost">
+                        <h3 class="totalAcc">Accomodation: <span class="accTotal" id="accTotal04">$0.00</span></h3>
+                        <h3 class="Breakfast">Breakfast: <span class="breakfastTotal" id="bfastTotal04">$0.00</span></h3>
+                        <h3 class="totalCost">The total is: <span class="allTotal" id="allTotal04">$0.00</span></h3></div>
+                    <div class="book">
+                        <h3>Book now</h3></div>
+                </div>
+            </div>
+
+            <div class="searchitem-1 hide" id=searchitem5>
+                <div class="image-gallery"><i class="fa fa-times close-button"></i><img src="assets/AKL_Motel001.jpg" alt=""></div>
+                <div class="searchitem-info">
+                    <div class="price">
+                        <h3>$90/night | 2-4  <i class="far fa-user"></i> </h3> </div>
+                    <h2>Greenlane Suites <span>Auckland</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora consectetur inventore earum tenetur iste? Lorem ipsum dolor sit amet.</p>
+                    <div class="mealoptions">
+                        <h3>Add Breakfast (+$10/person)<span><input type="checkbox" name="breakfast" class='breakfastCheckbox' value="false"></h3></span>
+                    </div>
+                    <div class="availfac">
+                        <h3>Available Facilities:</h3>
+                        <div class="facilities">
+                            <div class="facility"><i class="fas fa-swimmer"></i>
+                                <h4>Swimming/Spa</h4></div>
+                            <div class="facility"> <i class="fas fa-concierge-bell"></i>
+                                <h4>Room Service</h4></div>
+                            <div class="facility"><i class="fas fa-wifi"></i>
+                                <h4>WiFi Available</h4></div>
+                            <div class="facility"><i class="fas fa-dumbbell"></i>
+                                <h4>Gym Access</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="textCost">
+                        <h3 class="totalAcc">Accomodation: <span class="accTotal" id="accTotal05">$0.00</span></h3>
+                        <h3 class="Breakfast">Breakfast: <span class="breakfastTotal" id="bfastTotal05">$0.00</span></h3>
+                        <h3 class="totalCost">The total is: <span class="allTotal" id="allTotal05">$0.00</span></h3></div>
+                    <div class="book">
+                        <h3>Book now</h3></div>
+                </div>
+            </div>
+
+            <div class="searchitem-1 hide" id=searchitem6>
+                <div class="image-gallery"><i class="fa fa-times close-button"></i><img src="assets/WLG_Motel001.jpg" alt=""></div>
+                <div class="searchitem-info">
+                    <div class="price">
+                        <h3>$90/night | 2-4  <i class="far fa-user"></i> </h3> </div>
+                    <h2>Marksman Motor Inn <span>Wellington</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora consectetur inventore earum tenetur iste? Lorem ipsum dolor sit amet.</p>
+                    <div class="mealoptions">
+                        <h3>Add Breakfast (+$10/person)<span><input type="checkbox" name="breakfast" class='breakfastCheckbox' value="false"></h3></span>
+                    </div>
+                    <div class="availfac">
+                        <h3>Available Facilities:</h3>
+                        <div class="facilities">
+                            <div class="facility"><i class="fas fa-swimmer"></i>
+                                <h4>Swimming/Spa</h4></div>
+                            <div class="facility"> <i class="fas fa-concierge-bell"></i>
+                                <h4>Room Service</h4></div>
+                            <div class="facility"><i class="fas fa-wifi"></i>
+                                <h4>WiFi Available</h4></div>
+                            <div class="facility"><i class="fas fa-dumbbell"></i>
+                                <h4>Gym Access</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="textCost">
+                        <h3 class="totalAcc">Accomodation: <span class="accTotal" id="accTotal06">$0.00</span></h3>
+                        <h3 class="Breakfast">Breakfast: <span class="breakfastTotal" id="bfastTotal06">$0.00</span></h3>
+                        <h3 class="totalCost">The total is: <span class="allTotal" id="allTotal06">$0.00</span></h3></div>
+                    <div class="book">
+                        <h3>Book now</h3></div>
+                </div>
+            </div>
+
+            <div class="searchitem-1 hide" id=searchitem7>
+                <div class="image-gallery"><i class="fa fa-times close-button"></i><img src="assets/AKL_House001.jpg" alt=""></div>
+                <div class="searchitem-info">
+                    <div class="price">
+                        <h3>$240/night | 1-4  <i class="far fa-user"></i> </h3> </div>
+                    <h2>Waiheke Island <span>Auckland</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora consectetur inventore earum tenetur iste? Lorem ipsum dolor sit amet.</p>
+                    <div class="mealoptions">
+                        <h3>Add Breakfast (+$10/person)<span><input type="checkbox" name="breakfast" class='breakfastCheckbox' value="false"></h3></span>
+                    </div>
+                    <div class="availfac">
+                        <h3>Available Facilities:</h3>
+                        <div class="facilities">
+                            <div class="facility"><i class="fas fa-swimmer"></i>
+                                <h4>Swimming/Spa</h4></div>
+                            <div class="facility"> <i class="fas fa-concierge-bell"></i>
+                                <h4>Room Service</h4></div>
+                            <div class="facility"><i class="fas fa-wifi"></i>
+                                <h4>WiFi Available</h4></div>
+                            <div class="facility"><i class="fas fa-dumbbell"></i>
+                                <h4>Gym Access</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="textCost">
+                        <h3 class="totalAcc">Accomodation: <span class="accTotal" id="accTotal07">$0.00</span></h3>
+                        <h3 class="Breakfast">Breakfast: <span class="breakfastTotal" id="bfastTotal07">$0.00</span></h3>
+                        <h3 class="totalCost">The total is: <span class="allTotal" id="allTotal07">$0.00</span></h3></div>
+                    <div class="book">
+                        <h3>Book now</h3></div>
+                </div>
+            </div>
+
+            <div class="searchitem-1 hide" id=searchitem8>
+                <div class="image-gallery" id="image08" ><i class="fa fa-times close-button"></i><img src="assets/WLG_House001.jpg" alt=""></div>
+                <div class="searchitem-info">
+                    <div class="price">
+                        <h3>$240/night | 1-4  <i class="far fa-user"></i> </h3> </div>
+                    <h2>Kapiti Coast <span>Wellington</span></h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tempora consectetur inventore earum tenetur iste? Lorem ipsum dolor sit amet.</p>
+                    <div class="mealoptions">
+                        <h3>Add Breakfast (+$10/person)<span><input type="checkbox" name="breakfast" class='breakfastCheckbox' value="false"></h3></span>
+                    </div>
+                    <div class="availfac">
+                        <h3>Available Facilities:</h3>
+                        <div class="facilities">
+                            <div class="facility"><i class="fas fa-swimmer"></i>
+                                <h4>Swimming/Spa</h4></div>
+                            <div class="facility"> <i class="fas fa-concierge-bell"></i>
+                                <h4>Room Service</h4></div>
+                            <div class="facility"><i class="fas fa-wifi"></i>
+                                <h4>WiFi Available</h4></div>
+                            <div class="facility"><i class="fas fa-dumbbell"></i>
+                                <h4>Gym Access</h4></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="textCost">
+                        <h3 class="totalAcc">Accomodation: <span class="accTotal" id="accTotal08">$0.00</span></h3>
+                        <h3 class="Breakfast">Breakfast: <span class="breakfastTotal" id="bfastTotal08">$0.00</span></h3>
+                        <h3 class="totalCost">The total is: <span class="allTotal" id="allTotal08">$0.00</span></h3></div>
+                    <div class="book">
+                        <h3>Book now</h3></div>
+                </div>
+            </div>
+
+
+        </section>
+        <div class="overlay hide"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/anime.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
